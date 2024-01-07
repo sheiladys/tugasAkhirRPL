@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cuci">
+
+    <RelativeLayout
+        android:id="@+id/estimasi"
+        android:layout_width="wrap_content"
+        android:layout_height="179dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bgberat">
+
+        <TextView
+            android:id="@+id/txtEstimasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="Estimasi Berat Cucian"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/berat"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtEstimasi"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="-8dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/kgLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/berat"
+            android:layout_marginStart="7dp"
+            android:layout_marginBottom="2dp"
+            android:layout_toEndOf="@+id/berat"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="KG"
+            android:textColor="@color/white"
+            android:textSize="35sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/berat">
+
+            <ImageView
+                android:id="@+id/kurang"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="30dp"
+                android:src="@drawable/minus" />
+
+            <ImageView
+                android:id="@+id/tambah"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="300dp"
+                android:layout_marginBottom="30dp"
+                android:src="@drawable/add" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/estimasi"
+        android:id="@+id/kualitas"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinssemibold"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:text="Pilih Kualitas Cucian"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bgberat"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/cbStandar"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppinssemibold"
+                android:textColor="@color/white"
+                android:text="Standar" />
+
+            <RadioButton
+                android:id="@+id/cbPremium"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="Premium" />
+        </RadioGroup>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kualitas"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/txtwp"
+        android:text="Tanggal Pengembalian"
+        android:fontFamily="@font/poppinssemibold"
+        android:textSize="17sp"/>
+
+    <EditText
+        android:id="@+id/editTextTanggal"
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtwp"
+        android:layout_marginLeft="30dp"
+        android:focusable="false"
+        android:fontFamily="@font/poppinssemibold"
+        android:hint="Pilih Tanggal"
+        android:inputType="none"
+        android:onClick="showDatePickerDialog"
+        android:textSize="17sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alamat Pengantaran"
+        android:layout_below="@id/editTextTanggal"
+        android:id="@+id/alamat"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:textSize="17sp"
+        />
+
+    <EditText
+        android:id="@+id/inputAlamat"
+        android:layout_width="371dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/alamat"
+        android:layout_marginLeft="20dp"
+        android:autofillHints=""
+        android:background="@drawable/button_shape"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/poppinsregular"
+        android:hint="Masukkan alamat"
+        android:inputType="text"
+        android:paddingStart="20dp"
+        android:textSize="15sp"
+        tools:ignore="RtlSymmetry,VisualLintTextFieldSize" />
+
+    <Button
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputAlamat"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:text="Konfirmasi Pesanan"
+        android:textColor="@color/white"
+        android:onClick="konfirmasiPesanan"
+        android:background="@drawable/button_shape" />
+
+</RelativeLayout>

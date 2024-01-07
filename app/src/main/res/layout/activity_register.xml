@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@color/background">
+
+    <ImageView
+        android:id="@+id/img3"
+        android:layout_width="233dp"
+        android:layout_height="121dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-62dp"
+        android:layout_marginTop="-30dp"
+        android:src="@drawable/bentuk"
+        tools:ignore="ImageContrastCheck,VisualLintBounds"
+        android:contentDescription="@string/isi" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:id="@+id/btn_back2"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/txt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="@string/selamat_datang"
+        android:textSize="20sp"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/txt6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="@string/silakan_daftar_terlebih_dahulu"
+        android:textColor="#616161"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/txt6"
+        android:padding="30dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/white"
+            android:hint="@string/nama_lengkap"
+            android:textSize="15sp"
+            android:inputType="text"
+            android:paddingStart="20dp"
+            android:fontFamily="@font/poppinsregular"
+            android:id="@+id/nama_lengkap"
+            tools:ignore="RtlSymmetry,VisualLintTextFieldSize"
+            android:autofillHints="" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/button_shape"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
+            android:hint="@string/username"
+            android:textSize="15sp"
+            android:paddingStart="20dp"
+            android:fontFamily="@font/poppinsregular"
+            android:id="@+id/username"
+            tools:ignore="RtlSymmetry,VisualLintTextFieldSize"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/button_shape"
+            android:layout_marginTop="10dp"
+            android:paddingRight="20dp"
+            android:backgroundTint="@color/white"
+            android:hint="@string/alamat_email"
+            android:textSize="15sp"
+            android:paddingLeft="20dp"
+            android:fontFamily="@font/poppinsregular"
+            android:id="@+id/email"
+            tools:ignore="VisualLintTextFieldSize"
+            android:inputType="textEmailAddress"
+            android:autofillHints="" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/button_shape"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
+            android:hint="@string/kata_sandi"
+            android:paddingRight="20dp"
+            android:textSize="15sp"
+            android:paddingLeft="20dp"
+            android:inputType="textPassword"
+            android:fontFamily="@font/poppinsregular"
+            android:id="@+id/password"
+            tools:ignore="VisualLintTextFieldSize"
+            android:autofillHints="" />
+
+        <Button
+            android:id="@+id/btnDaftar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:width="350dp"
+            android:height="40dp"
+            android:background="@drawable/button_shape"
+            android:fontFamily="@font/poppinssemibold"
+            android:gravity="center"
+            android:text="@string/daftar"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            tools:ignore="VisualLintButtonSize" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppinsregular"
+                android:text="@string/sudah_punya_akun"
+                android:textColor="#616161"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtMasuk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppinsregular"
+                android:text="@string/masuk"
+                android:textColor="#00796B"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

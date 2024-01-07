@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/background"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Laundry.shel"
+        android:layout_below="@id/img1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:textSize="17dp"
+        android:textColor="@color/black"
+        android:id="@+id/txt1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt1"
+        android:text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex magnam totam quis, repellat, accusantium dignissimos itaque delectus ipsa quibusdam laudanestia"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppinsregular"
+        android:padding="20dp"
+        android:gravity="center"
+        android:id="@+id/txt2"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:width="300dp"
+        android:height="40dp"
+        android:background="@drawable/button_shape"
+        android:fontFamily="@font/poppinssemibold"
+        android:gravity="center"
+        android:text="Masuk"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:id="@+id/btn_1"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:width="300dp"
+        android:height="40dp"
+        android:background="@drawable/button_shape"
+        android:fontFamily="@font/poppinssemibold"
+        android:gravity="center"
+        android:text="Daftar"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:id="@+id/btn_2"/>
+
+</RelativeLayout>

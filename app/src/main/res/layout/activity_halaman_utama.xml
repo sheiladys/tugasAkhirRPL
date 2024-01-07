@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".halamanUtama"
+    android:background="@color/background">
+
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="wrap_content"
+        android:layout_height="450dp"
+         android:background="@drawable/bg"/>
+
+    <ImageView
+        android:id="@+id/foto"
+        android:layout_width="47dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/profil" />
+
+    <TextView
+        android:layout_width="208dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/foto"
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="9dp"
+        android:layout_toEndOf="@+id/foto"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="Profile"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foto"
+        android:text="Selamat Datang di,\nAlSeTa Laundry !"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="180dp"
+        android:gravity="right"
+        android:fontFamily="@font/poppinssemibold"
+        android:id="@+id/welcome"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome"
+        android:text="Pilihlah laundry service yang anda \nminati hari ini"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="5dp"
+        android:gravity="right"
+        android:fontFamily="@font/poppinsregular"
+        android:id="@+id/txt1"
+        />
+
+    <LinearLayout
+        android:layout_width="383dp"
+        android:layout_height="182dp"
+        android:layout_below="@id/txt1"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="60dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="116dp"
+            android:layout_height="182dp"
+            android:layout_marginLeft="40dp"
+            android:layout_below="@id/txt1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/washFitur"
+                android:layout_width="115dp"
+                android:layout_height="130dp"
+                android:src="@drawable/fitur" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="Cuci"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="182dp"
+            android:layout_below="@id/txt1"
+            android:layout_marginLeft="30dp"
+            android:orientation="vertical"
+            android:layout_weight="1"> <!-- Add layout_weight attribute -->
+
+            <ImageView
+                android:layout_width="115dp"
+                android:layout_height="130dp"
+                android:src="@drawable/fitur3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Setrika"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bg"
+        android:text="About Us"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/text3"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppinssemibold"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="137dp"
+        android:layout_height="85dp"
+        android:layout_below="@id/text3"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logo2" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="149dp"
+        android:layout_marginTop="505dp"
+        android:layout_marginRight="150dp"
+        android:layout_toEndOf="@+id/logo"
+        android:fontFamily="@font/poppinsregular"
+        android:gravity="start|end"
+        android:text="AlSeTa Laundry adalah layanan laundry yang beroperasi di Makassar dan didirikan pada tahun 2023. Terletak di Jalan Biring Romang, Daya. " />
+
+</RelativeLayout>

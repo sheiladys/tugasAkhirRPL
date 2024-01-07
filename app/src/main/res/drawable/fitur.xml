@@ -1,0 +1,20 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background Shape -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/background" />
+            <corners android:radius="100dp" />
+        </shape>
+    </item>
+
+    <!-- Drawable with Padding -->
+    <item
+        android:left="300dp"
+        android:top="300dp"
+        android:right="300dp"
+        android:bottom="300dp">
+        <bitmap android:src="@drawable/wash" />
+    </item>
+
+</layer-list>

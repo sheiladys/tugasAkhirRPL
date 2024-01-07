@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">TugasBesarRPL</string>
+    <string name="sudah_punya_akun">Sudah punya akun?</string>
+    <string name="daftar">Daftar</string>
+    <string name="alamat_email">Alamat Email</string>
+    <string name="todo">TODO</string>
+    <string name="isi">TODO</string>
+    <string name="nama_lengkap">Nama lengkap</string>
+    <string name="kata_sandi">Kata Sandi</string>
+    <string name="selamat_datang">Selamat Datang!</string>
+    <string name="silakan_daftar_terlebih_dahulu">Silakan daftar terlebih dahulu</string>
+    <string name="masuk">Masuk</string>
+    <string name="username">Username</string>
+    <string name="belum_punya_akun">Belum punya akun?</string>
+    <string name="lakukan">TODO</string>
+    <string name="selamat_datang_kembali">Selamat Datang Kembali!</string>
+    <string name="lakukann">TODO</string>
+    <string name="doit">TODO</string>
+    <string name="uname">Username</string>
+    <string name="pass">Kata sandi</string>
+    <string name="msk">Masuk</string>
+    <string name="dftr">Daftar</string>
+</resources>
